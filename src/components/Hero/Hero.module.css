@@ -12,7 +12,7 @@
 .heroInner {
     max-width: var(--layout-max-width);
     margin: 0 auto;
-    padding: 80px var(--gutter-desktop) 180px;
+    padding: 80px var(--gutter-desktop) var(--spacing-sections-half);
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(0, 468fr) minmax(0, 568fr);
@@ -23,35 +23,12 @@
 /* ===== Tablet (768px – 1023px) ===== */
 @media (min-width: 768px) and (max-width: 1023px) {
     .heroInner {
-        padding: 60px var(--gutter-tablet) 120px;
+        padding: 60px var(--gutter-tablet) var(--spacing-sections-tablet-half);
         grid-template-columns: 1fr;
         gap: 55px;
     }
 
-    .heroLeft {
-        width: 100%;
-        gap: 40px;
-    }
-
-    .decorativeVector {
-        width: 205.6px;
-        height: 66.5px;
-        top: 77.46px;
-        left: 140px;
-    }
-
-    .body {
-        letter-spacing: 0.02em;
-    }
-
-    .subtitle {
-        letter-spacing: 0.02em;
-        line-height: 33px;
-    }
-
     .imagePlaceholder {
-        width: 601px;
-        height: 602px;
         border-radius: 27.2px;
     }
 }
@@ -59,24 +36,13 @@
 /* ===== Mobile (< 768px) ===== */
 @media (max-width: 767px) {
     .heroInner {
-        padding: 40px var(--gutter-mobile) 80px;
+        padding: 40px var(--gutter-mobile) var(--spacing-sections-mobile-half);
         grid-template-columns: 1fr;
         gap: 24px;
     }
 
-    .title {
-        font-size: 32px;
-        line-height: 38px;
-    }
-
-    .subtitle {
-        font-size: 20px;
-        line-height: 26px;
-    }
-
-    .body {
-        font-size: 18px;
-        line-height: 24px;
+    .heroLeft {
+        padding-bottom: 23px;
     }
 }
 
@@ -84,66 +50,72 @@
 .heroLeft {
     display: flex;
     flex-direction: column;
-    position: relative;
-    isolation: isolate;
-    gap: 24px;
     min-width: 0;
-    flex-shrink: 0;
+}
+
+/* Vector permanently anchored to the word "sonreír" */
+.highlight {
+    position: relative;
+    display: inline-block;
+    isolation: isolate;
+    white-space: nowrap;
 }
 
 .decorativeVector {
     position: absolute;
-    width: 189.4px;
-    height: 66.5px;
-    left: 168px;
-    top: 5px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
     pointer-events: none;
-    z-index: 0;
-    margin: 0;
+    z-index: -1;
 }
 
+/*
+    clamp(min, preferred, max)
+    preferred = linear scale from 375px (mobile) to 768px (tablet)
+    below 375px → clamps to min; above 768px → clamps to max (desktop)
+*/
 .textContent {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    position: relative;
-    z-index: 1;
+    gap: clamp(22px, calc(4.82px + 4.58vw), 40px);
 }
 
 .title {
     font-family: 'Fibra One';
     font-weight: 700;
-    font-size: 45.9px;
-    line-height: 54px;
+    font-size: clamp(32px, calc(18.73px + 3.538vw), 45.9px);
+    line-height: 1.18;
     color: #435549;
-    letter-spacing: 0.09px;
+    letter-spacing: 0.01em;
     margin: 0;
-    flex-shrink: 0;
 }
 
 .subtitle {
     font-family: 'Fibra One';
     font-weight: 700;
-    font-size: 25.8px;
-    line-height: 33px;
+    font-size: clamp(18px, calc(10.56px + 1.984vw), 25.8px);
+    line-height: 1.2;
     color: #435549;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.02em;
     margin: 0;
 }
 
 .body {
     font-family: 'Fibra One';
     font-weight: 400;
-    font-size: 26.5px;
-    line-height: 32px;
+    font-size: clamp(18px, calc(9.89px + 2.163vw), 26.5px);
+    line-height: 1.2;
     color: #435549;
-    letter-spacing: 0.65px;
+    letter-spacing: 0.02em;
     margin: 0;
 }
 
 /* ===== Right column — image placeholder ===== */
 .imagePlaceholder {
-    height: 550px;
+    width: 100%;
+    aspect-ratio: 568 / 550;
     border-radius: 24px;
     background-color: #d0cecc;
     overflow: hidden;

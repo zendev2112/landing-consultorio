@@ -6,15 +6,18 @@ const Hero: FunctionComponent = () => {
     <section className={styles.hero} id="inicio">
       <div className={styles.heroInner}>
         <div className={styles.heroLeft}>
-          <img
-            className={styles.decorativeVector}
-            src="/vector-1.svg"
-            alt=""
-            aria-hidden="true"
-          />
           <div className={styles.textContent}>
             <h1 className={styles.title}>
-              Volvé a sonreír
+              Volvé a{' '}
+              <span className={styles.highlight}>
+                <img
+                  className={styles.decorativeVector}
+                  src="/vector-1.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                sonreír
+              </span>
               <br />
               con confianza.
             </h1>

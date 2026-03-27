@@ -1,0 +1,89 @@
+.card {
+    width: 100%;
+    border-radius: 24px;
+    background-color: #b9cebe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 44px 24px;
+    box-sizing: border-box;
+    gap: 24px;
+    text-align: left;
+    font-size: 14px;
+    color: #f7f1e3;
+    font-family: 'Fibra One';
+}
+
+.icon {
+    width: 91.9px;
+    height: 85.3px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.cardBtn {
+    width: 177px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #3e5648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-family: 'Fibra One';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    color: #f7f1e3;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cardBtn:hover {
+    background-color: var(--color-verde-calma);
+    color: var(--color-verde-profundo);
+}
+
+/* ===== Tablet (768px – 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        height: 435px;
+        justify-content: center;
+    }
+}
+
+.txt {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    font-size: 18px;
+    color: #435549;
+}
+
+.title {
+    width: 100%;
+    position: relative;
+    font-size: 26.5px;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    display: block;
+    margin: 0;
+}
+
+.description {
+    width: 100%;
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    display: block;
+    flex-shrink: 0;
+    margin: 0;
+}

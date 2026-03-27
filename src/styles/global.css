@@ -316,6 +316,13 @@
     --gutter-desktop: 138px;
     --gutter-tablet: 54px;
     --gutter-mobile: 24px;
+    /* Section spacing: 80px desktop, 60px tablet, 40px mobile */
+    --spacing-sections: 80px;
+    --spacing-sections-half: 40px;
+    --spacing-sections-tablet: 60px;
+    --spacing-sections-tablet-half: 30px;
+    --spacing-sections-mobile: 40px;
+    --spacing-sections-mobile-half: 20px;
 }
 
 /* ===== Breakpoints Reference =====
@@ -336,6 +343,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -346,6 +354,7 @@ body {
     background-color: var(--color-natural);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 img {
@@ -420,7 +429,7 @@ ol {
         display: flex;
         align-self: stretch;
         width: 100%;
-        height: 57px;
+        height: 45px;
         padding: 0px 32px;
     }
 }
