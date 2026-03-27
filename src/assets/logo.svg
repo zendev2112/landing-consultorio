@@ -1,0 +1,13 @@
+<!-- 
+  Placeholder logo. Replace this file with the real SVG exported from Figma.
+  Figma file: c5vgT6dfevJmfIBt1jg9As | Node: 289:188 (btn hover/LOGO)
+  Export as SVG from Figma → right-click the component → Copy as SVG, or
+  use the Export panel in Dev Mode and save as logo.svg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198 44" width="198" height="44">
+  <!-- Tooth icon placeholder -->
+  <path d="M12 4 C8 4 4 7 4 12 C4 16 5 20 7 26 C8 30 10 38 12 38 C13 38 14 34 15 30 C16 34 17 38 18 38 C20 38 22 30 23 26 C25 20 26 16 26 12 C26 7 22 4 18 4 C16 4 15 6 15 6 C15 6 14 4 12 4 Z" fill="#3E5648"/>
+  <!-- Text placeholder -->
+  <text x="32" y="17" font-family="'Fibra One', Georgia, serif" font-weight="700" font-size="13" fill="#3E5648">Zenón Ponce</text>
+  <text x="32" y="34" font-family="'Fibra One', Georgia, serif" font-weight="700" font-size="13" fill="#3E5648">Odontología</text>
+</svg>

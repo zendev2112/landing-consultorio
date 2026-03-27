@@ -1,0 +1,30 @@
+.tratamientos {
+    padding: 4rem 0;
+}
+
+.tratamientos__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tratamientos__title {
+    font-size: 2rem;
+}
+
+.tratamientos__subtitle {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .tratamientos {
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tratamientos {
+        padding: 8rem 0;
+    }
+}

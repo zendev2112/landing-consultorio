@@ -1,0 +1,30 @@
+.nuestroCentro {
+    padding: 4rem 0;
+}
+
+.nuestroCentro__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nuestroCentro__title {
+    font-size: 2rem;
+}
+
+.nuestroCentro__subtitle {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .nuestroCentro {
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nuestroCentro {
+        padding: 8rem 0;
+    }
+}

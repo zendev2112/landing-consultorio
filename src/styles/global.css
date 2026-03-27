@@ -1,0 +1,412 @@
+/* ===== Font: Fibra One ===== */
+
+/* Thin 100 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Thin It.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* UltraLight 200 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One UltraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One UltraLight It.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Light 300 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Light It.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Regular 400 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Regular It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SemiBold 600 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One SemiBold It.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold 700 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Bold It.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Heavy 800 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One Heavy It.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* UltraBold 900 */
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One UltraBold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One';
+    src: url('../assets/fonts/Los Andes - Fibra One UltraBold It.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ===== Font: Fibra One Alt ===== */
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Thin It.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt UltraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt UltraLight It.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Light It.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Regular It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt SemiBold It.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Bold It.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt Heavy It.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt UltraBold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fibra One Alt';
+    src: url('../assets/fonts/Los Andes - Fibra One Alt UltraBold It.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ===== Design Tokens ===== */
+:root {
+    /* --- Colors --- */
+    --color-verde-profundo: #3E5648;
+    --color-verde-calma: #B3CEBC;
+    --color-natural: #F7F1E3;
+    --color-white: #FFFFFF;
+    --color-text: #3E5648;
+    /* default body text */
+    --color-text-muted: rgba(62, 86, 72, 0.65);
+
+    /* --- Shadow --- */
+    --shadow-card: 0 4px 4px rgba(0, 0, 0, 0.20);
+
+    /* --- Typography --- */
+    --font-family: 'Fibra One', Georgia, 'Times New Roman', serif;
+
+    /* Font sizes — desktop base */
+    --font-size-h1: 2.425rem;
+    /* 38.8px */
+    --font-size-h2: 2.044rem;
+    /* 32.7px */
+    --font-size-h3: 1.656rem;
+    /* 26.5px */
+    --font-size-body: 1.4rem;
+    /* 22.4px */
+    --font-size-parraf: 1.125rem;
+    /* 18px   */
+
+    /* Line heights */
+    --line-height-h1: 2.875rem;
+    /* 46px  */
+    --line-height-h2: 2.5rem;
+    /* 40px  */
+    --line-height-h3: 2rem;
+    /* 32px  */
+    --line-height-body: 1.2;
+    --line-height-text: 1.2;
+
+    /* Letter spacing */
+    --letter-spacing-heading: 0.049rem;
+    /* 0.78125px */
+    --letter-spacing-body: 0.098rem;
+    /* 1.5625px  */
+
+    /* --- Layout --- */
+    --container-max-width: 1200px;
+    --container-padding-mobile: 1.5rem;
+    --container-padding-tablet: 2rem;
+    --container-padding-desktop: 2.5rem;
+}
+
+/* ===== Breakpoints Reference =====
+   Mobile:  < 768px   (default / mobile-first)
+   Tablet:  768px – 1023px
+   Desktop: >= 1024px
+   ================================= */
+
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-parraf);
+    line-height: var(--line-height-body);
+    color: var(--color-text);
+    background-color: var(--color-natural);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ===== Layout Container ===== */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding-mobile);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 var(--container-padding-tablet);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 var(--container-padding-desktop);
+    }
+}
+
+/* ===== Typography Helpers ===== */
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    line-height: var(--line-height-h1);
+    letter-spacing: var(--letter-spacing-body);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    line-height: var(--line-height-h2);
+    letter-spacing: var(--letter-spacing-heading);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 700;
+    line-height: var(--line-height-h3);
+    letter-spacing: var(--letter-spacing-heading);
+}
+
+p {
+    font-size: var(--font-size-parraf);
+    line-height: var(--line-height-text);
+    letter-spacing: var(--letter-spacing-body);
+}

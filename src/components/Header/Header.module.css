@@ -1,0 +1,289 @@
+/* =============================================
+   Header — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As | node 322:240
+   Desktop: 1440px wide, 100px height
+   Tablet:  834px
+   Mobile:  < 768px
+   ============================================= */
+
+/* ---- Base (shared) ---- */
+.header {
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    background-color: var(--color-natural);
+    /* #F7F1E3 */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navBar {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 38px 138px 0;
+}
+
+/* ---- Logo ---- */
+.logoLink {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 197.8px;
+    height: 43.78px;
+    display: block;
+}
+
+/* ---- Navigation menu ---- */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide mobile-only CTA item on desktop */
+.menuCta {
+    display: none;
+}
+
+.menuItem {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16.3px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--color-verde-profundo);
+    /* #3E5648 */
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.menuItem:hover {
+    color: var(--color-verde-calma);
+    /* #B3CEBC */
+}
+
+/* ---- CTA + Hamburger group ---- */
+.btnHamb {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+}
+
+/* ---- CTA Button ---- */
+.btnAgenda {
+    height: 38px;
+    min-width: 177px;
+    border-radius: 6px;
+    background-color: var(--color-verde-profundo);
+    /* #3E5648 */
+    color: var(--color-natural);
+    /* #F7F1E3 */
+    font-family: var(--font-family);
+    /* Fibra One */
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btnAgenda:hover {
+    background-color: var(--color-verde-calma);
+    /* #B3CEBC */
+    color: var(--color-verde-profundo);
+    /* #3E5648 */
+}
+
+/* ---- Hamburger button (mobile/tablet) ---- */
+.hamburguerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    /* match button height so top/bottom lines align */
+    height: 38px;
+}
+
+.hamburguerIcon {
+    display: block;
+    /* slightly wider than button — per Figma proportions */
+    height: 42px;
+    width: auto;
+}
+
+/* =============================================
+   Tablet drawer
+   ============================================= */
+.drawerBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 200;
+    animation: backdropFadeIn 0.3s ease forwards;
+}
+
+.drawerPanel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 201;
+    animation: slideFromRight 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.drawerPanelMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 201;
+    animation: slideFromRight 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Mobile menu panel: starts near top with space, from right edge to ~middle of logo icon */
+.mobileDrawerPanel {
+    position: fixed;
+    top: 24px;
+    right: 0;
+    left: 40px;
+    z-index: 201;
+    animation: slideFromRight 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.backdropFadeOut {
+    animation: backdropFadeOut 0.35s ease forwards !important;
+}
+
+.slideToRight {
+    animation: slideToRight 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+
+@keyframes backdropFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes backdropFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* =============================================
+   Tablet  (768px – 1023px)
+   ============================================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navBar {
+        height: 128px;
+        padding: 40px 54px;
+        align-items: center;
+    }
+
+    /* Hide desktop nav links — show via PortalPopup instead */
+    .menu {
+        display: none;
+    }
+
+    /* Group: CTA button + hamburger with 51px gap */
+    .btnHamb {
+        gap: 51px;
+    }
+
+    /* Show hamburger on tablet */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Slightly wider button on tablet */
+    .btnAgenda {
+        min-width: 184px;
+        border-radius: 7px;
+    }
+}
+
+/* =============================================
+   Mobile  (< 768px)
+   ============================================= */
+@media (max-width: 767px) {
+    .header {
+        margin-top: 30px;
+    }
+
+    .navBar {
+        height: auto;
+        min-height: 44px;
+        padding: 24px;
+    }
+
+    .logo {
+        width: auto;
+        height: 35px;
+    }
+
+    /* Hide desktop CTA — hamburger only on mobile */
+    .btnAgendaDesktop {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Nav handled by mobile drawer portal — hide inline menu */
+    .menu {
+        display: none;
+    }
+}

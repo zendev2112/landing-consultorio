@@ -1,0 +1,30 @@
+.profesionales {
+    padding: 4rem 0;
+}
+
+.profesionales__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profesionales__title {
+    font-size: 2rem;
+}
+
+.profesionales__subtitle {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .profesionales {
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profesionales {
+        padding: 8rem 0;
+    }
+}

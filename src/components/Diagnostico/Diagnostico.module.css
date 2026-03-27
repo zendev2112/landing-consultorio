@@ -1,0 +1,30 @@
+.diagnostico {
+    padding: 4rem 0;
+}
+
+.diagnostico__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.diagnostico__title {
+    font-size: 2rem;
+}
+
+.diagnostico__subtitle {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .diagnostico {
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .diagnostico {
+        padding: 8rem 0;
+    }
+}
