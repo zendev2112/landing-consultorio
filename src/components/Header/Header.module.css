@@ -18,14 +18,14 @@
 
 .navBar {
     width: 100%;
-    max-width: 1440px;
+    max-width: var(--layout-max-width);
     margin: 0 auto;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 38px 138px 0;
+    padding: 38px var(--gutter-desktop) 0;
 }
 
 /* ---- Logo ---- */
@@ -227,7 +227,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .navBar {
         height: 128px;
-        padding: 40px 54px;
+        padding: 40px var(--gutter-tablet);
         align-items: center;
     }
 
@@ -264,7 +264,7 @@
     .navBar {
         height: auto;
         min-height: 44px;
-        padding: 24px;
+        padding: var(--gutter-mobile);
     }
 
     .logo {

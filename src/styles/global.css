@@ -312,10 +312,10 @@
     /* 1.5625px  */
 
     /* --- Layout --- */
-    --container-max-width: 1200px;
-    --container-padding-mobile: 1.5rem;
-    --container-padding-tablet: 2rem;
-    --container-padding-desktop: 2.5rem;
+    --layout-max-width: 1440px;
+    --gutter-desktop: 138px;
+    --gutter-tablet: 54px;
+    --gutter-mobile: 24px;
 }
 
 /* ===== Breakpoints Reference =====
@@ -366,20 +366,62 @@ ol {
 /* ===== Layout Container ===== */
 .container {
     width: 100%;
-    max-width: var(--container-max-width);
+    max-width: var(--layout-max-width);
     margin: 0 auto;
-    padding: 0 var(--container-padding-mobile);
+    padding-left: var(--gutter-desktop);
+    padding-right: var(--gutter-desktop);
+    box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .container {
-        padding: 0 var(--container-padding-tablet);
+        padding-left: var(--gutter-tablet);
+        padding-right: var(--gutter-tablet);
     }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
     .container {
-        padding: 0 var(--container-padding-desktop);
+        padding-left: var(--gutter-mobile);
+        padding-right: var(--gutter-mobile);
+    }
+}
+
+/* ===== Button Styles ===== */
+.cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    height: 54px;
+    padding: 14px 32px;
+    border-radius: 10px;
+    background-color: var(--color-verde-profundo);
+    color: var(--color-natural);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.cta:hover {
+    background-color: var(--color-verde-calma);
+    color: var(--color-verde-profundo);
+}
+
+/* ===== Mobile Button — Full Width ===== */
+@media (max-width: 767px) {
+    .cta {
+        display: flex;
+        align-self: stretch;
+        width: 100%;
+        height: 57px;
+        padding: 0px 32px;
     }
 }
 
