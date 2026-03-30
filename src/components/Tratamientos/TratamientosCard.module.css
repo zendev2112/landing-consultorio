@@ -34,7 +34,7 @@
     box-sizing: border-box;
     font-family: 'Fibra One';
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 18px;
     letter-spacing: 0.05em;
     white-space: nowrap;
@@ -45,8 +45,8 @@
 }
 
 .cardBtn:hover {
-    background-color: var(--color-verde-calma);
-    color: var(--color-verde-profundo);
+    background-color: #f7f1e3;
+    color: #3e5648;
 }
 
 /* ===== Tablet (768px – 1023px) ===== */
@@ -79,11 +79,16 @@
 }
 
 .description {
-    width: 100%;
+    width: 276px;
+    height: 128px;
     position: relative;
+    font-size: 18px;
     letter-spacing: 0.02em;
     line-height: 120%;
-    display: block;
+    color: #435549;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Fibra One';
     flex-shrink: 0;
     margin: 0;
 }

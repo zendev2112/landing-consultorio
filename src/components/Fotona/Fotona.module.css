@@ -1,30 +1,136 @@
+/* =============================================
+   Fotona — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As | node 182-251
+   ============================================= */
+
 .fotona {
-    padding: 4rem 0;
+    width: 100%;
+    font-family: 'Fibra One';
+    color: #435549;
 }
 
-.fotona__inner {
+.fotonaInner {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: 40px var(--gutter-desktop) var(--spacing-sections-half);
+    box-sizing: border-box;
+    /* Figma-exact */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 80px 20px;
+    font-size: 32.7px;
+}
+
+.columnaIcono {
+    width: 496px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 8px;
 }
 
-.fotona__title {
-    font-size: 2rem;
+.iconoFotona {
+    width: 85.6px;
+    height: 85.6px;
 }
 
-.fotona__subtitle {
-    font-size: 1.125rem;
-    color: #666;
+.txtFotona {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0;
+    gap: 9px;
 }
 
-@media (min-width: 768px) {
-    .fotona {
-        padding: 6rem 0;
+.laserFotona {
+    align-self: stretch;
+    font-size: 32.7px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 40px;
+}
+
+.bastaDeMiedo {
+    align-self: stretch;
+    font-size: 26.5px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    color: rgba(67, 85, 73, 0.87);
+}
+
+.columnaTxt {
+    width: 495px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 48px 0 24px;
+    box-sizing: border-box;
+    gap: 24px;
+    font-size: 22.4px;
+}
+
+.laTecnologiaLaser {
+    align-self: stretch;
+    letter-spacing: 0.01em;
+    line-height: 120%;
+}
+
+.casiSinAnestesia {
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .fotonaInner {
+        padding: 29px var(--gutter-tablet) var(--spacing-sections-tablet-half);
+        gap: 32px;
+    }
+
+    .columnaIcono,
+    .columnaTxt {
+        width: 100%;
+    }
+
+    .columnaTxt {
+        padding: 0;
     }
 }
 
-@media (min-width: 1024px) {
-    .fotona {
-        padding: 8rem 0;
+/* ---- Mobile ---- */
+@media (max-width: 767px) {
+    .fotonaInner {
+        padding: 50px var(--gutter-mobile) var(--spacing-sections-mobile-half);
+        gap: 24px;
+    }
+
+    .columnaIcono,
+    .columnaTxt {
+        width: 100%;
+    }
+
+    .columnaTxt {
+        padding: 0;
+        font-size: clamp(17px, calc(10px + 1.82vw), 22.4px);
+    }
+
+    .laserFotona {
+        font-size: clamp(24px, calc(14px + 2.6vw), 32.7px);
+    }
+
+    .bastaDeMiedo {
+        font-size: clamp(20px, calc(12px + 2.08vw), 26.5px);
+        font-weight: 400;
+    }
+
+    .laTecnologiaLaser,
+    .casiSinAnestesia {
+        font-weight: 700;
     }
 }

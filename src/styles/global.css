@@ -343,7 +343,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -354,7 +354,7 @@ body {
     background-color: var(--color-natural);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 img {
