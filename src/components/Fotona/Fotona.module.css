@@ -12,7 +12,7 @@
 .fotonaInner {
     max-width: var(--layout-max-width);
     margin: 0 auto;
-    padding: 40px var(--gutter-desktop) var(--spacing-sections-half);
+    padding: 40px var(--gutter-desktop) var(--spacing-sections);
     box-sizing: border-box;
     /* Figma-exact */
     display: flex;
@@ -89,7 +89,7 @@
 /* ---- Tablet ---- */
 @media (min-width: 768px) and (max-width: 1023px) {
     .fotonaInner {
-        padding: 29px var(--gutter-tablet) var(--spacing-sections-tablet-half);
+        padding: 29px var(--gutter-tablet) 80px;
         gap: 32px;
     }
 
@@ -106,7 +106,7 @@
 /* ---- Mobile ---- */
 @media (max-width: 767px) {
     .fotonaInner {
-        padding: 50px var(--gutter-mobile) var(--spacing-sections-mobile-half);
+        padding: 50px var(--gutter-mobile) 48px;
         gap: 24px;
     }
 

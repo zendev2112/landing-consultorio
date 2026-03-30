@@ -1,11 +1,78 @@
+import { FunctionComponent } from 'react'
 import styles from './Diagnostico.module.css'
 
-const Diagnostico: React.FC = () => {
+const Diagnostico: FunctionComponent = () => {
   return (
     <section className={styles.diagnostico} id="diagnostico">
-      <div className={`container ${styles.diagnostico__inner}`}>
-        <h2 className={styles.diagnostico__title}>Diagnóstico</h2>
-        <p className={styles.diagnostico__subtitle}>Placeholder</p>
+      {/* Banner verde claro */}
+      <div className={styles.banner}>
+        <div className={styles.bannerInner}>
+          <div className={styles.bannerItem}>
+            <img
+              className={styles.iconoEstrella}
+              src="/icono-estrella.svg"
+              alt=""
+            />
+            <b className={styles.bannerText}>+ 25 AÑOS DE EXPERIENCIA</b>
+          </div>
+          <div className={styles.bannerItem}>
+            <img
+              className={styles.iconoSonriente}
+              src="/icono-sonriente.svg"
+              alt=""
+            />
+            <b className={styles.bannerTextLg}>+ 1000 SONRISAS FELICES</b>
+          </div>
+        </div>
+      </div>
+
+      {/* Contenido tecnología */}
+      <div className={styles.contenido}>
+        <div className={styles.contenidoInner}>
+          <div className={styles.txtUnSoloLugar}>
+            <b className={styles.titulo}>
+              Un solo lugar,
+              <br />
+              todas las respuestas
+            </b>
+            <p className={styles.descripcion}>
+              Gracias al diagnóstico digital por imágenes, resolvemos los
+              tratamientos de nuestros pacientes en un solo lugar, sin
+              derivaciones ni demoras. Y todo en un espacio pensado para atender
+              tu salud bucal con tecnología y calidez.
+            </p>
+            <button className={`${styles.btnAgenda} ${styles.btnDesktop}`}>
+              <b className={styles.btnLabel}>AGENDÁ TU TURNO</b>
+            </button>
+          </div>
+
+          <div className={styles.estudios}>
+            <div className={styles.estudioItem}>
+              <img
+                className={styles.iconoEstudio}
+                src="/icono-tomografia.svg"
+                alt=""
+              />
+              <span className={styles.estudioLabel}>Tomografía 3D</span>
+            </div>
+
+            <div className={styles.estudioItem}>
+              <img className={styles.iconoEstudio} src="/icono-rx.svg" alt="" />
+              <span className={styles.estudioLabel}>Radiología</span>
+            </div>
+            <div className={styles.estudioItem}>
+              <img
+                className={styles.iconoEstudio}
+                src="/icono-escaner.svg"
+                alt=""
+              />
+              <span className={styles.estudioLabel}>Escaneo intraoral</span>
+            </div>
+          </div>
+          <button className={`${styles.btnAgenda} ${styles.btnMobileTablet}`}>
+            <b className={styles.btnLabel}>AGENDÁ TU TURNO</b>
+          </button>
+        </div>
       </div>
     </section>
   )

@@ -1,30 +1,337 @@
-.diagnostico {
-    padding: 4rem 0;
-}
+/* =============================================
+   Diagnostico — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As | node 334-506
+   ============================================= */
 
-.diagnostico__inner {
+.diagnostico {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: flex-start;
+    font-family: 'Fibra One';
+    color: #435549;
 }
 
-.diagnostico__title {
-    font-size: 2rem;
+/* ---- Banner ---- */
+.banner {
+    width: 100%;
+    background-color: #b3cebc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px var(--gutter-desktop) 23px;
+    box-sizing: border-box;
+    min-height: 77px;
 }
 
-.diagnostico__subtitle {
-    font-size: 1.125rem;
-    color: #666;
+.bannerInner {
+    width: 100%;
+    max-width: calc(var(--layout-max-width) - (var(--gutter-desktop) * 2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
-@media (min-width: 768px) {
-    .diagnostico {
-        padding: 6rem 0;
+.bannerItem {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.iconoEstrella {
+    width: 31.6px;
+    height: 30.1px;
+    flex-shrink: 0;
+}
+
+.iconoSonriente {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.bannerText {
+    font-size: 24.5px;
+    letter-spacing: -0.01em;
+    line-height: 30px;
+}
+
+.bannerTextLg {
+    font-size: 26.5px;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+}
+
+/* ---- Contenido ---- */
+.contenido {
+    width: 100%;
+    background-color: #3e5648;
+    display: flex;
+    justify-content: center;
+    padding: 91px var(--gutter-desktop);
+    box-sizing: border-box;
+    color: #f7f2e5;
+}
+
+.contenidoInner {
+    width: 100%;
+    max-width: calc(var(--layout-max-width) - (var(--gutter-desktop) * 2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Left column */
+.txtUnSoloLugar {
+    width: 591px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.btnDesktop {
+    display: flex;
+}
+
+.btnMobileTablet {
+    display: none;
+}
+
+.btnAgenda {
+    width: 243px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: #b3cebc;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    box-sizing: border-box;
+    color: #3e5648;
+    transition: all 0.3s ease;
+}
+
+.btnAgenda:hover {
+    border-radius: 10px;
+    background-color: #f7f1e3;
+    color: #3e5648;
+    font-family: 'Fibra One';
+}
+
+.btnLabel {
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 22px;
+    font-family: 'Fibra One';
+    white-space: nowrap;
+}
+
+.descripcion {
+    margin: 0;
+    align-self: stretch;
+    font-size: 22.4px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+.titulo {
+    align-self: stretch;
+    font-size: 32.7px;
+    letter-spacing: 0.01em;
+    line-height: 40px;
+}
+
+/* Right column */
+.estudios {
+    width: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 57px;
+    font-size: 22.4px;
+}
+
+.estudioItem {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.iconoEstudio {
+    width: 65px;
+    flex-shrink: 0;
+}
+
+.estudioLabel {
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        height: 48px;
+        min-height: unset;
+        padding: 11px var(--gutter-tablet);
+        justify-content: center;
+    }
+
+    .bannerInner {
+        gap: 59px;
+        justify-content: center;
+    }
+
+    .bannerItem {
+        gap: 11px;
+    }
+
+    .iconoEstrella {
+        width: 22px;
+        height: 21px;
+    }
+
+    .iconoSonriente {
+        width: 22px;
+        height: 23px;
+    }
+
+    .bannerText {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .bannerTextLg {
+        font-size: 15px;
+        line-height: 32px;
+    }
+
+    .contenido {
+        padding: 60px var(--gutter-tablet);
+    }
+
+    .contenidoInner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+    }
+
+    .txtUnSoloLugar,
+    .estudios {
+        width: 100%;
+    }
+
+    .btnDesktop {
+        display: none;
+    }
+
+    .btnMobileTablet {
+        display: flex;
     }
 }
 
-@media (min-width: 1024px) {
-    .diagnostico {
-        padding: 8rem 0;
+/* ---- Mobile ---- */
+@media (max-width: 767px) {
+    .banner {
+        height: 85px;
+        min-height: unset;
+        padding: 20px var(--gutter-mobile);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bannerInner {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bannerItem {
+        height: 32px;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .iconoEstrella {
+        width: 18px;
+        height: 18px;
+    }
+
+    .iconoSonriente {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+
+    .bannerText {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .bannerTextLg {
+        font-size: 14px;
+        line-height: 32px;
+        flex-shrink: 0;
+    }
+
+    .contenido {
+        padding: 60px var(--gutter-mobile);
+    }
+
+    .contenidoInner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+    }
+
+    .txtUnSoloLugar {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 22.4px;
+        letter-spacing: 0.02em;
+        line-height: 120%;
+    }
+
+    .descripcion {
+        font-size: 14clopx;
+        letter-spacing: 0.02em;
+        line-height: 120%;
+        font-weight: bold;
+    }
+
+    .estudios {
+        width: 100%;
+        padding: 19px 0;
+        gap: 14px;
+    }
+
+    .iconoEstudio {
+        width: 41px;
+    }
+
+    .estudioLabel {
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        line-height: 120%;
+    }
+
+    .btnDesktop {
+        display: none;
+    }
+
+    .btnMobileTablet {
+        display: flex;
+        width: 100%;
+        height: 41px;
+        padding: 12px 32px;
     }
 }
