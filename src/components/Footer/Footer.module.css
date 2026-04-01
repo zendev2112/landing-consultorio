@@ -1,11 +1,303 @@
-.footer {
-    padding: 2rem 0;
-    border-top: 1px solid #eee;
-    margin-top: 4rem;
+/* ===== SECTION SHELL ===== */
+.seccionFooter {
+    width: 100%;
+    background-color: #435549;
+    color: #f7f2e5;
+    font-family: 'Fibra One';
+    font-size: 16.3px;
 }
 
-.footer__inner {
-    text-align: center;
-    font-size: 0.875rem;
-    color: #888;
+/* ===== INNER WRAPPER ===== */
+.inner {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: 100px var(--gutter-desktop) 180px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== THREE-COLUMN ROW ===== */
+.footerColumns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ===== LOGO + PAYMENTS ===== */
+.logoAceptamos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 199px;
+    font-size: 14.3px;
+}
+
+.logoIcon {
+    width: 197.8px;
+    height: 43.8px;
+    object-fit: contain;
+}
+
+.aceptamosTodos {
+    letter-spacing: 0.01em;
+}
+
+.aceptamosTodos2 {
+    line-height: 18px;
+}
+
+.losMediosDe {
+    line-height: 16.8px;
+}
+
+/* ===== ADDRESS + MAP ===== */
+.ubicacion {
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.visitanosEnNuestro {
+    align-self: stretch;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+}
+
+.addressText {
+    align-self: stretch;
+    line-height: 20px;
+}
+
+.mapImg {
+    align-self: stretch;
+    height: 200.9px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ===== RIGHT COLUMN ===== */
+.footerRight {
+    width: 171px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46px;
+}
+
+.redesSociales {
+    width: 139px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.sectionLabel {
+    align-self: stretch;
+    letter-spacing: 0.01em;
+    line-height: 20px;
+    font-size: 14.3px;
+}
+
+.redesSocialesIcon {
+    width: 103.6px;
+    height: 27.9px;
+}
+
+.contacto {
+    width: 149.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.whatsapp {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.iconoWa {
+    height: 21px;
+    width: 21px;
+    flex-shrink: 0;
+}
+
+.phone {
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    font-size: 14.3px;
+}
+
+.btnContactanos {
+    align-self: stretch;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #b3cebc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btnLabel {
+    font-size: 14px;
+    color: #3e5648;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+
+/* ===== VISIBILITY HELPERS ===== */
+.desktopOnly {
+    display: block;
+}
+
+.mobileTabletOnly {
+    display: none;
+}
+
+/* ===== COPYRIGHT ===== */
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 52px 0;
+    gap: 28px;
+    font-size: 14.3px;
+}
+
+.copyrightDivider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(247, 242, 229, 0.3);
+}
+
+.copyrightText {
+    margin: 0;
+    letter-spacing: 0.01em;
+    line-height: 17px;
+    font-size: 14.3px;
+}
+
+/* ===== TABLET (768px–1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileTabletOnly {
+        display: block;
+        font-size: 14.3px;
+        letter-spacing: 0.01em;
+    }
+
+    .inner {
+        padding: 100px var(--gutter-tablet) 180px;
+    }
+
+    .footerColumns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 100px;
+    }
+
+    .logoAceptamos {
+        gap: 24px;
+    }
+
+    .ubicacion {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .mapImg {
+        height: 441px;
+    }
+
+    .footerRight {
+        width: auto;
+    }
+}
+
+/* ===== MOBILE (max-width: 767px) ===== */
+@media (max-width: 767px) {
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileTabletOnly {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        line-height: 120%;
+    }
+
+    .seccionFooter {
+        background-color: #3e5648;
+        font-size: 14px;
+    }
+
+    .inner {
+        padding: 100px var(--gutter-mobile) 180px;
+        gap: 45px;
+    }
+
+    .footerColumns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 69px;
+    }
+
+    .logoAceptamos {
+        gap: 24px;
+        font-size: 12px;
+    }
+
+    .logoIcon {
+        width: 222px;
+        height: 49px;
+    }
+
+    .ubicacion {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .addressText {
+        height: 40px;
+        display: inline-block;
+    }
+
+    .mapImg {
+        height: 163px;
+    }
+
+    .footerRight {
+        width: 100%;
+        font-size: 16.3px;
+    }
+
+    .copyright {
+        gap: 12px;
+        font-size: 11px;
+    }
+
+    .copyrightText {
+        font-size: 11px;
+    }
 }
