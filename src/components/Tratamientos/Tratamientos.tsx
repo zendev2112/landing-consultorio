@@ -7,7 +7,7 @@ const cards = [
     title: (
       <>
         Rehabilitación oral
-        <br />e Implantes dentales
+        <br />e implantes dentales
       </>
     ),
     description: (
@@ -21,8 +21,7 @@ const cards = [
   {
     title: (
       <>
-        Ortodoncia
-        <br />y Ortopedia
+        Ortodoncia <br /> y Ortopedia
       </>
     ),
     description: (
@@ -44,12 +43,7 @@ const cards = [
     icon: '/icono-estetica.svg',
   },
   {
-    title: (
-      <>
-        ATM, Bruxismo
-        <br />y alivio del dolor
-      </>
-    ),
+    title: <>ATM, Bruxismo y alivio del dolor</>,
     description: (
       <>
         Tratamos el <b>dolor mandibular</b> y el <b>desgaste dental</b>{' '}
@@ -59,12 +53,7 @@ const cards = [
     icon: '/icono-atm.svg',
   },
   {
-    title: (
-      <>
-        Odontología general
-        <br />y Cirugía
-      </>
-    ),
+    title: <>Odontología general y Cirugía</>,
     description: (
       <>
         Atención integral para <b>toda la familia</b>, desde{' '}
@@ -76,9 +65,7 @@ const cards = [
   {
     title: (
       <>
-        Blanquemiento
-        <br />
-        dental
+        Blanquemiento <br /> dental
       </>
     ),
     description: (

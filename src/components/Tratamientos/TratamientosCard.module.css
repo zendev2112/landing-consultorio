@@ -1,5 +1,6 @@
 .card {
     width: 100%;
+    min-width: 0;
     border-radius: 24px;
     background-color: #b9cebe;
     display: flex;
@@ -9,7 +10,7 @@
     padding: 44px 24px;
     box-sizing: border-box;
     gap: 24px;
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     color: #f7f1e3;
     font-family: 'Fibra One';
@@ -59,6 +60,7 @@
 
 .txt {
     align-self: stretch;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,20 +76,29 @@
     font-size: 26.5px;
     letter-spacing: 0.01em;
     line-height: 32px;
+    text-align: center;
     display: block;
     margin: 0;
 }
 
+/* Shrink title only on small-laptop range where 3-col cards are too narrow */
+@media (min-width: 1024px) and (max-width: 1300px) {
+    .title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
 .description {
-    width: 276px;
-    height: 128px;
+    width: 100%;
+    max-width: 276px;
+    min-height: 128px;
     position: relative;
     font-size: 18px;
     letter-spacing: 0.02em;
     line-height: 120%;
     color: #435549;
     text-align: center;
-    display: inline-block;
     font-family: 'Fibra One';
     flex-shrink: 0;
     margin: 0;
