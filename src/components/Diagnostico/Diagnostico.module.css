@@ -92,14 +92,6 @@
     gap: 32px;
 }
 
-.btnDesktop {
-    display: flex;
-}
-
-.btnMobileTablet {
-    display: none;
-}
-
 .btnAgenda {
     width: 243px;
     height: 54px;
@@ -114,6 +106,14 @@
     box-sizing: border-box;
     color: #3e5648;
     transition: all 0.3s ease;
+}
+
+.btnDesktop {
+    display: flex;
+}
+
+.btnMobileTablet {
+    display: none;
 }
 
 .btnAgenda:hover {
@@ -302,10 +302,11 @@
     }
 
     .descripcion {
-        font-size: 14clopx;
+        font-size: 14px;
         letter-spacing: 0.02em;
-        line-height: 120%;
+        line-height: 140%;
         font-weight: bold;
+        text-align: left;
     }
 
     .estudios {

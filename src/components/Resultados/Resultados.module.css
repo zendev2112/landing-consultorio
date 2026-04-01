@@ -1,30 +1,205 @@
-.resultados {
-    padding: 4rem 0;
-}
+/* =============================================
+   Resultados — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As | node 258-94
+   ============================================= */
 
-.resultados__inner {
+.resultados {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fibra One';
+    color: #435549;
+    text-align: left;
+    margin-bottom: 80px;
 }
 
-.resultados__title {
-    font-size: 2rem;
+.seccionResultados {
+    width: 100%;
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: var(--spacing-sections) var(--gutter-desktop) var(--spacing-sections-half);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
 }
 
-.resultados__subtitle {
-    font-size: 1.125rem;
-    color: #666;
+/* ---- Text header ---- */
+.antesYDespues {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-@media (min-width: 768px) {
-    .resultados {
-        padding: 6rem 0;
+.antesYDespus {
+    align-self: stretch;
+    font-size: 26.5px;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+}
+
+.resultadosRealesBeneficios {
+    align-self: stretch;
+    font-size: 22.4px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+/* ---- Slider ---- */
+.sliderContainer {
+    position: relative;
+    width: 965.7px;
+    height: 636.3px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: ew-resize;
+    user-select: none;
+    touch-action: none;
+    flex-shrink: 0;
+}
+
+.imgBefore,
+.imgAfter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-user-drag: none;
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.handle {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+    width: 64px;
+    height: 64px;
+}
+
+.circleIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+}
+
+.arrowLeft {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+}
+
+.arrowRight {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+}
+
+/* ---- Mobile stacked images ---- */
+.mobileImages {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.mobileImg {
+    align-self: stretch;
+    height: 395px;
+    border-radius: 27.2px;
+    max-width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .seccionResultados {
+        max-width: 100%;
+        padding: 10px var(--gutter-tablet) 30px;
+        align-items: flex-start;
+        gap: 10px;
+        color: #3e5648;
+    }
+
+    .antesYDespus {
+        font-size: 26.5px;
+        line-height: 32px;
+        margin-top: 20px
+    }
+
+    .resultadosRealesBeneficios {
+        font-size: 18px;
+        margin-bottom: 46px;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        height: 551px;
+        border-radius: 16px;
     }
 }
 
-@media (min-width: 1024px) {
-    .resultados {
-        padding: 8rem 0;
+/* ---- Mobile ---- */
+@media (max-width: 767px) {
+    .seccionResultados {
+        max-width: 100%;
+        padding: 40px var(--gutter-mobile);
+        align-items: flex-start;
+        gap: 10px;
+        color: #3e5648;
+        font-size: 24px;
+    }
+
+    .antesYDespues {
+        align-self: stretch;
+        padding: 10px 0 31px;
+        gap: 7px;
+    }
+
+    .antesYDespus {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .resultadosRealesBeneficios {
+        font-size: 14px;
+    }
+
+    .sliderContainer {
+        display: none;
+    }
+
+    .mobileImages {
+        display: flex;
     }
 }

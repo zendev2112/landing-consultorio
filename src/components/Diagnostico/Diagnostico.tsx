@@ -55,7 +55,6 @@ const Diagnostico: FunctionComponent = () => {
               />
               <span className={styles.estudioLabel}>Tomografía 3D</span>
             </div>
-
             <div className={styles.estudioItem}>
               <img className={styles.iconoEstudio} src="/icono-rx.svg" alt="" />
               <span className={styles.estudioLabel}>Radiología</span>

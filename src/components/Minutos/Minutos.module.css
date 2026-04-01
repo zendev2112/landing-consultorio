@@ -1,30 +1,291 @@
+/* =============================================
+   Minutos (¿Tenés 30 minutos?) — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As | node 251-100 / 494-667 / 543-899
+   ============================================= */
+
 .minutos {
-    padding: 4rem 0;
+    width: 100%;
+    background-color: #b3cebc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px var(--gutter-desktop);
+    box-sizing: border-box;
+    font-family: 'Fibra One';
+    font-size: 38.8px;
+    color: #435549;
+    text-align: left;
 }
 
-.minutos__inner {
+.inner {
+    width: 100%;
+    max-width: 1164px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 153px;
+}
+
+.min {
+    width: 540.2px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    isolation: isolate;
+    font-size: 38.8px;
+    color: #435549;
+    font-family: 'Fibra One';
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.highlight30 {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.vectorIcon {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    transform: scale(1.15);
+    transform-origin: top left;
+}
+
+.tens {
+    width: 100%;
+    position: relative;
+    font-size: 38.8px;
+    letter-spacing: 0.02em;
+    line-height: 46px;
+    font-family: 'Fibra One';
+    color: #435549;
+    text-align: left;
+    z-index: 1;
+    flex-shrink: 0;
+    margin-top: -50px;
+    margin-bottom: 32px;
+}
+
+.esElTiempo {
+    width: 100%;
+    position: relative;
+    font-size: 22.4px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    font-family: 'Fibra One';
+    color: #435549;
+    text-align: left;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.incluye {
+    width: 244px;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 32px;
+    margin-top: -32px;
+    font-size: 20px;
+    color: #435549;
+    font-family: 'Fibra One';
+    text-align: left;
 }
 
-.minutos__title {
-    font-size: 2rem;
+
+.incluye2 {
+    width: 100%;
+    position: relative;
+    font-size: 22.4px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    font-family: 'Fibra One';
+    color: #435549;
+    text-align: left;
+    display: inline-block;
 }
 
-.minutos__subtitle {
-    font-size: 1.125rem;
-    color: #666;
+.escaneoDigital {
+    width: 100%;
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+    font-family: 'Fibra One';
+    color: #435549;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
 }
 
-@media (min-width: 768px) {
+.btnAgenda {
+    width: 273px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #3e5648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #f7f1e3;
+    font-family: 'Fibra One';
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.agendTuTurno {
+    position: relative;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+/* ---- Tablet ---- */
+@media (min-width: 768px) and (max-width: 1023px) {
     .minutos {
-        padding: 6rem 0;
+        height: 435px;
+        overflow: hidden;
+        padding: 0 var(--gutter-tablet);
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .inner {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0;
+        height: 100%;
+    }
+
+    .min {
+        align-self: stretch;
+        width: auto;
+        gap: 32px 0;
+    }
+
+    .vectorIcon {
+        top: -15px;
+    }
+
+    .tens {
+        letter-spacing: 0.02em;
+        line-height: 46px;
+        margin-top: 80px;
+        margin-bottom: -10px;
+    }
+
+    .esElTiempo {
+        width: 100%;
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .incluye {
+        width: 244px;
+        padding: 37px 0;
+        gap: 8px;
+        margin-top: 0;
+        font-size: 18px;
+        color: #3e5648;
+    }
+
+    .incluye2 {
+        font-size: 18px;
+    }
+
+    .escaneoDigital {
+        font-size: 18px;
+    }
+
+    .btnAgenda {
+        width: 350px;
+        margin-top: 21px;
+        margin-bottom: 40px;
     }
 }
 
-@media (min-width: 1024px) {
+/* ---- Mobile ---- */
+@media (max-width: 767px) {
     .minutos {
-        padding: 8rem 0;
+        overflow: hidden;
+        padding: 40px var(--gutter-mobile);
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 26.5px;
+        margin-top: -60px;
+    }
+
+    .inner {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .min {
+        align-self: stretch;
+        width: auto;
+        padding: 40px 24px 0;
+        gap: 32px 0;
+    }
+
+    .vectorIcon {
+        transform: scale(1.1);
+        transform-origin: top left;
+    }
+
+    .tens {
+        letter-spacing: 0.01em;
+        font-size: 26.5px;
+        line-height: 32px;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .esElTiempo {
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .incluye {
+        align-self: stretch;
+        width: auto;
+        padding: 37px 24px;
+        gap: 0;
+        margin-top: 0;
+        font-size: 14px;
+        color: #3e5648;
+    }
+
+    .incluye2 {
+        font-size: 18px;
+    }
+
+    .escaneoDigital {
+        height: 76px;
+        color: #435549;
+        font-size: 14px;
+    }
+
+    .btnAgenda {
+        align-self: stretch;
+        width: auto;
+        height: 39px;
+        margin-top: 0;
     }
 }

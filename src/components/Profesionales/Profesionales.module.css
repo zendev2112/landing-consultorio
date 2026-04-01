@@ -1,30 +1,187 @@
+/* =============================================
+   Profesionales — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As
+   Desktop: node 272-141 | Tablet: 621-840 | Mobile: 558-923
+   ============================================= */
+
 .profesionales {
-    padding: 4rem 0;
+    width: 100%;
+    text-align: left;
+    color: #435549;
+    font-family: 'Fibra One';
 }
 
-.profesionales__inner {
+.inner {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: var(--spacing-sections) var(--gutter-desktop);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 48px;
 }
 
-.profesionales__title {
-    font-size: 2rem;
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
-.profesionales__subtitle {
-    font-size: 1.125rem;
-    color: #666;
+.equipo {
+    font-size: 32.7px;
+    letter-spacing: 0.01em;
+    line-height: 40px;
 }
 
-@media (min-width: 768px) {
-    .profesionales {
-        padding: 6rem 0;
+.nosPresentamos {
+    font-size: 22.4px;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    text-align: center;
+    font-size: 26.5px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 100%;
+    aspect-ratio: 353 / 373;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #d9d9d9;
+    display: block;
+}
+
+.titulo {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+}
+
+.zennPonce {
+    font-size: 26.5px;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    margin-top: 36px;
+}
+
+.tituloMatricula {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dirClnicoZenn {
+    align-self: stretch;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+.dirNowrap {
+    white-space: nowrap;
+}
+
+/* =============================================
+   Tablet (768px – 1023px)
+   Figma node 621-840
+   ============================================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .inner {
+        padding: var(--spacing-sections-tablet) var(--gutter-tablet);
+        gap: 10px;
+    }
+
+    .nosPresentamos {
+        margin-bottom: 18px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 40px;
+    }
+
+    .titulo {
+        justify-content: center;
+        padding-top: 0;
+        margin-top: -3px;
+    }
+
+    .tituloMatricula {
+        font-size: 18px;
     }
 }
 
-@media (min-width: 1024px) {
-    .profesionales {
-        padding: 8rem 0;
+/* =============================================
+   Mobile (max-width: 767px)
+   Figma node 558-923
+   ============================================= */
+@media (max-width: 767px) {
+    .inner {
+        padding: var(--spacing-sections-mobile) var(--gutter-mobile);
+        gap: 48px;
+    }
+
+    .equipo {
+        font-size: 26.5px;
+        line-height: 32px;
+    }
+
+    .nosPresentamos {
+        font-size: 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 0;
+        font-size: 18px;
+    }
+
+    .card {
+        height: 500px;
+    }
+
+    .foto {
+        align-self: stretch;
+        flex: 1;
+        aspect-ratio: unset;
+        height: auto;
+        min-height: 0;
+    }
+
+    .zennPonce {
+        font-size: 18px;
+    }
+
+    .titulo {
+        align-self: stretch;
+        height: 180px;
+        justify-content: flex-start;
+        padding: 18px 0 0;
+        gap: 8px;
+        margin-top: -36px;
+        margin-bottom: 32px;
+    }
+
+    .tituloMatricula {
+        font-size: 14px;
+        margin-top: -10px;
     }
 }

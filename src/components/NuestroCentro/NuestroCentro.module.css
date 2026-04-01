@@ -1,30 +1,163 @@
-.nuestroCentro {
-    padding: 4rem 0;
+/* =============================================
+   NuestroCentro — Zenón Ponce Odontología
+   Figma: c5vgT6dfevJmfIBt1jg9As
+   Desktop: node 272-92 | Tablet: 494-683 | Mobile: 555-912
+   ============================================= */
+
+.seccionNuestroCentro {
+    width: 100%;
+    text-align: left;
+    font-size: 22.4px;
+    color: #435549;
+    font-family: 'Fibra One';
 }
 
-.nuestroCentro__inner {
+.inner {
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    padding: var(--spacing-sections) var(--gutter-desktop);
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 570fr) minmax(0, 540fr);
+    align-items: center;
+    gap: 99px;
+}
+
+.clipPathFrame {
+    height: 550.3px;
+    width: 570.4px;
+    position: relative;
+    border-radius: 27.2px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.rectangle {
+    position: absolute;
+    height: 137.98%;
+    width: 105.22%;
+    top: -14.55%;
+    right: -2.3%;
+    bottom: -23.43%;
+    left: -2.92%;
+    background-color: #d9d9d9;
+}
+
+.nuestroCentro {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 24px;
+    min-width: 0;
 }
 
-.nuestroCentro__title {
-    font-size: 2rem;
+.nuestroCentro2 {
+    align-self: stretch;
+    font-size: 32.7px;
+    letter-spacing: 0.01em;
+    line-height: 40px;
 }
 
-.nuestroCentro__subtitle {
-    font-size: 1.125rem;
-    color: #666;
+.enZennPonce {
+    align-self: stretch;
+    letter-spacing: 0.02em;
+    line-height: 120%;
 }
 
-@media (min-width: 768px) {
-    .nuestroCentro {
-        padding: 6rem 0;
+.nuestroEnfoque {
+    align-self: stretch;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+.diagnsticoProfesionalCon {
+    align-self: stretch;
+    letter-spacing: 0.02em;
+    line-height: 120%;
+}
+
+.btnAgenda {
+    height: 38px;
+    border-radius: 7px;
+    background-color: #3e5648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #f7f1e3;
+    font-family: 'Fibra One';
+    border: none;
+    cursor: pointer;
+}
+
+.agendTuTurno {
+    line-height: 18px;
+}
+
+/* =============================================
+   Tablet (768px – 1023px)
+   Figma node 494-683
+   ============================================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .seccionNuestroCentro {
+        font-size: 18px;
+    }
+
+    .inner {
+        padding: var(--spacing-sections-tablet) var(--gutter-tablet);
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+
+    .nuestroEnfoque {
+        font-size: 22.4px;
     }
 }
 
-@media (min-width: 1024px) {
+/* =============================================
+   Mobile (max-width: 767px)
+   Figma node 555-912
+   ============================================= */
+@media (max-width: 767px) {
+    .seccionNuestroCentro {
+        font-size: 16px;
+    }
+
+    .inner {
+        padding: var(--spacing-sections-mobile) var(--gutter-mobile) 0;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .clipPathFrame {
+        width: 100%;
+        height: 318px;
+    }
+
     .nuestroCentro {
-        padding: 8rem 0;
+        gap: 28px;
+    }
+
+    .nuestroCentro2 {
+        font-size: 22.4px;
+        letter-spacing: 0.02em;
+        line-height: 120%;
+        font-weight: bold;
+    }
+
+    .enZennPonce {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .diagnsticoProfesionalCon {
+        font-weight: bold;
+    }
+
+    .btnAgenda {
+        align-self: stretch;
+        height: 43px;
     }
 }
