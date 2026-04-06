@@ -147,15 +147,11 @@
 
 /* ===== MOBILE (max-width: 767px) ===== */
 @media (max-width: 767px) {
-    .inner {
-        padding: 60px var(--gutter-mobile);
-        gap: 32px;
-    }
-
     .preguntasFrecuentes {
         font-size: 22.4px;
         letter-spacing: 0.02em;
         line-height: 120%;
+        margin-top: 20px;
     }
 
     .question {
@@ -166,8 +162,14 @@
         font-size: 18px;
     }
 
+    .inner {
+        padding: 60px var(--gutter-mobile);
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
     .divider {
-        height: 3px;
+        height: 1px;
         width: calc(100% + 2 * var(--gutter-mobile));
         margin-left: calc(-1 * var(--gutter-mobile));
     }

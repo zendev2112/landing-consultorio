@@ -24,9 +24,9 @@ const IMAGES = {
   },
   mobile: {
     before:
-      'https://res.cloudinary.com/dptdloagw/image/upload/v1774899466/antes-mobile_nzjq8l.png',
+      'https://res.cloudinary.com/dptdloagw/image/upload/v1775494664/Rectangle_hxa1fi.png',
     after:
-      'https://res.cloudinary.com/dptdloagw/image/upload/v1774899467/despues-mobile_dhufsc.png',
+      'https://res.cloudinary.com/dptdloagw/image/upload/v1775494663/Rectangle_1_hadxdm.png',
   },
 }
 

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className={styles.logoAceptamos}>
             <img
               className={styles.logoIcon}
-              src="/icono-marca-reverse.svg"
+              src="/logo-claro.svg"
               alt="Zenón Ponce Odontología"
             />
             <b className={`${styles.aceptamosTodos} ${styles.desktopOnly}`}>

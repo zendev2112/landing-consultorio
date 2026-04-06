@@ -259,7 +259,9 @@
    ============================================= */
 @media (max-width: 767px) {
     .header {
-        margin-top: 30px;
+        top: 0;
+        padding-top: 30px;
+        background-color: #f7f1e3;
     }
 
     .navBar {

@@ -172,4 +172,8 @@
     .fraseOpinion {
         font-size: 15px;
     }
+
+    .flechas {
+        margin-top: -16px;
+    }
 }

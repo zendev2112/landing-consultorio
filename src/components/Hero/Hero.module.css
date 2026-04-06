@@ -121,6 +121,11 @@
     color: #435549;
     letter-spacing: 0.02em;
     margin: 0;
+    margin-bottom: 24px;
+}
+
+.imagePlaceholder {
+    margin-top: -18px;
 }
 
 .body {

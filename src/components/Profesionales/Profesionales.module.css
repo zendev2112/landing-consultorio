@@ -138,23 +138,26 @@
    ============================================= */
 @media (max-width: 767px) {
     .inner {
-        padding: var(--spacing-sections-mobile) var(--gutter-mobile);
+        padding: var(--spacing-sections-mobile) var(--gutter-mobile) 24px;
+        margin-bottom: 0;
         gap: 48px;
     }
 
     .equipo {
-        font-size: 26.5px;
-        line-height: 32px;
+        margin-top: 0;
+        font-size: 24px;
     }
 
     .nosPresentamos {
         font-size: 18px;
+        margin-top: -16px;
     }
 
     .cards {
         grid-template-columns: 1fr;
         gap: 0;
         font-size: 18px;
+        margin-top: -16px;
     }
 
     .card {

@@ -7,7 +7,7 @@
 .seccionNuestroCentro {
     width: 100%;
     text-align: left;
-    font-size: 22.4px;
+    font-size: clamp(18px, calc(1.06vw + 7.17px), 22.4px);
     color: #435549;
     font-family: 'Fibra One';
 }
@@ -24,12 +24,11 @@
 }
 
 .clipPathFrame {
-    height: 550.3px;
-    width: 570.4px;
+    width: 100%;
+    aspect-ratio: 570 / 550;
     position: relative;
     border-radius: 27.2px;
     overflow: hidden;
-    flex-shrink: 0;
 }
 
 .centroVideo {
@@ -49,9 +48,9 @@
 
 .nuestroCentro2 {
     align-self: stretch;
-    font-size: 32.7px;
+    font-size: clamp(26px, calc(1.61vw + 9.51px), 32.7px);
     letter-spacing: 0.01em;
-    line-height: 40px;
+    line-height: 120%;
 }
 
 .enZennPonce {
@@ -126,6 +125,7 @@
 @media (max-width: 767px) {
     .seccionNuestroCentro {
         font-size: 16px;
+        margin-bottom: 24px;
     }
 
     .inner {
@@ -137,6 +137,7 @@
     .clipPathFrame {
         width: 100%;
         height: 318px;
+        aspect-ratio: auto;
     }
 
     .nuestroCentro {

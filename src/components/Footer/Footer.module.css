@@ -195,6 +195,10 @@
 
 /* ===== TABLET (768px–1023px) ===== */
 @media (min-width: 768px) and (max-width: 1023px) {
+    .copyright {
+        padding-top: 16px;
+    }
+
     .desktopOnly {
         display: none;
     }
@@ -302,6 +306,7 @@
     .copyright {
         gap: 12px;
         font-size: 11px;
+        padding-top: 16px;
     }
 
     .copyrightText {

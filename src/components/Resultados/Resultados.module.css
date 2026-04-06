@@ -193,6 +193,7 @@
 
     .resultadosRealesBeneficios {
         font-size: 14px;
+        font-weight: bold;
     }
 
     .sliderContainer {
@@ -201,5 +202,6 @@
 
     .mobileImages {
         display: flex;
+        margin-bottom: 24px;
     }
 }

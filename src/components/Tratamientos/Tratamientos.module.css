@@ -80,6 +80,12 @@
         padding: var(--spacing-sections-mobile-half) var(--gutter-mobile) 50px;
     }
 
+    .subtitle {
+        margin-top: -32px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
     .grid {
         grid-template-columns: 1fr;
     }
