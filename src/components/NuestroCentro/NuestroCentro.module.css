@@ -101,6 +101,26 @@
    Tablet (768px – 1023px)
    Figma node 494-683
    ============================================= */
+/* =============================================
+   Small desktop (1024px – 1279px)
+   ============================================= */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .inner {
+        padding: var(--spacing-sections) var(--gutter-tablet);
+        gap: 48px;
+        align-items: stretch;
+    }
+
+    .seccionNuestroCentro {
+        font-size: 15px;
+    }
+
+    .nuestroCentro {
+        gap: 14px;
+        justify-content: space-between;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .seccionNuestroCentro {
         font-size: 18px;
@@ -110,7 +130,11 @@
     .inner {
         padding: var(--spacing-sections-tablet) var(--gutter-tablet);
         grid-template-columns: 1fr;
-        gap: 80px;
+        gap: 40px;
+    }
+
+    .clipPathFrame {
+        width: calc(100% - 160px);
     }
 
     .nuestroEnfoque {
