@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
+    margin-bottom: 80px;
 }
 
 /* ===== TITLE ===== */
@@ -21,6 +22,7 @@
     font-size: 32.7px;
     letter-spacing: 0.01em;
     line-height: 40px;
+    margin-top: 80px;
 }
 
 /* ===== FAQ LIST ===== */
@@ -131,6 +133,7 @@
     .preguntasFrecuentes {
         font-size: 26.5px;
         line-height: 32px;
+        margin-top: 14px;
     }
 
     .question {

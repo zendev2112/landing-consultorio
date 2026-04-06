@@ -143,6 +143,12 @@
     border: none;
     cursor: pointer;
     flex-shrink: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnAgenda:hover {
+    background-color: #f7f1e3;
+    color: #3e5648;
 }
 
 .agendTuTurno {

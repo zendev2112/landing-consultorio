@@ -205,6 +205,8 @@
         line-height: 30px;
     }
 
+
+
     .bannerTextLg {
         font-size: 15px;
         line-height: 32px;
@@ -218,11 +220,20 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 48px;
+        margin-top: 24px;
     }
 
     .txtUnSoloLugar,
     .estudios {
         width: 100%;
+    }
+
+    .estudios {
+        margin-bottom: 18px;
+    }
+
+    .titulo br {
+        display: none;
     }
 
     .btnDesktop {

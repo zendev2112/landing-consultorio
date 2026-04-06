@@ -6,7 +6,14 @@ const NuestroCentro: React.FC = () => {
     <section className={styles.seccionNuestroCentro} id="nuestro-centro">
       <div className={styles.inner}>
         <div className={styles.clipPathFrame}>
-          <div className={styles.rectangle} />
+          <video
+            className={styles.centroVideo}
+            src="https://res.cloudinary.com/dptdloagw/video/upload/v1775480307/nuestro_centro_skaw76.mov"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         </div>
         <div className={styles.nuestroCentro}>
           <b className={styles.nuestroCentro2}>Nuestro centro</b>

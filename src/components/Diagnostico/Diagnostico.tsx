@@ -31,7 +31,7 @@ const Diagnostico: FunctionComponent = () => {
         <div className={styles.contenidoInner}>
           <div className={styles.txtUnSoloLugar}>
             <b className={styles.titulo}>
-              Un solo lugar,
+              Un solo lugar, {''}
               <br />
               todas las respuestas
             </b>

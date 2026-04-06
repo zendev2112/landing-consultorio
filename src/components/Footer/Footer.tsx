@@ -27,7 +27,15 @@ const Footer: React.FC = () => {
             <div className={styles.addressText}>
               Villegas 175, Coronel Suárez, Bs. As.
             </div>
-            <img className={styles.mapImg} src="" alt="Mapa consultorio" />
+            <iframe
+              className={styles.mapImg}
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=Villegas+175,+Coronel+Suárez,+Buenos+Aires,+Argentina"
+              title="Mapa consultorio Zenón Ponce Odontología"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              style={{ border: 0 }}
+            />
           </div>
 
           {/* Social + contact + CTA */}

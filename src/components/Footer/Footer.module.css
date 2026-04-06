@@ -79,9 +79,8 @@
 .mapImg {
     align-self: stretch;
     height: 200.9px;
-    object-fit: cover;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.08);
+    display: block;
 }
 
 /* ===== RIGHT COLUMN ===== */
@@ -210,6 +209,10 @@
         padding: 100px var(--gutter-tablet) 180px;
     }
 
+    .addressText {
+        margin-bottom: 18px;
+    }
+
     .footerColumns {
         flex-direction: column;
         align-items: flex-start;
@@ -231,6 +234,10 @@
 
     .footerRight {
         width: auto;
+    }
+
+    .btnContactanos {
+        margin-bottom: 36px;
     }
 }
 

@@ -11,7 +11,11 @@ const Profesionales: React.FC = () => {
         </div>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <img className={styles.foto} alt="Zenón Ponce" />
+            <img
+              className={styles.foto}
+              src="https://res.cloudinary.com/dptdloagw/image/upload/v1775480228/zenon_nakvzc.jpg"
+              alt="Zenón Ponce"
+            />
             <div className={styles.titulo}>
               <b className={styles.zennPonce}>Zenón Ponce</b>
               <div className={styles.tituloMatricula}>
@@ -24,24 +28,32 @@ const Profesionales: React.FC = () => {
             </div>
           </div>
           <div className={styles.card}>
-            <img className={styles.foto} alt="Luis Borel" />
+            <img
+              className={styles.foto}
+              src="https://res.cloudinary.com/dptdloagw/image/upload/v1775480228/luis_sjcbpm.jpg"
+              alt="Luis Borel"
+            />
             <div className={styles.titulo}>
               <b className={styles.zennPonce}>Luis Borel</b>
               <div className={styles.tituloMatricula}>
                 <div className={styles.dirClnicoZenn}>Odontólogo UBA</div>
-                <div className={styles.dirClnicoZenn}>MP 51364</div>
+                <div className={styles.dirClnicoZenn}>M.P. 51364</div>
               </div>
             </div>
           </div>
           <div className={styles.card}>
-            <img className={styles.foto} alt="Juliana Schwab" />
+            <img
+              className={styles.foto}
+              src="https://res.cloudinary.com/dptdloagw/image/upload/v1775480227/juliana_gowrke.jpg"
+              alt="Juliana Schwab"
+            />
             <div className={styles.titulo}>
               <b className={styles.zennPonce}>Juliana Schwab</b>
               <div className={styles.tituloMatricula}>
                 <div className={styles.dirClnicoZenn}>
                   Odontóloga UBA especialista en ortodoncia y ortopedia maxilar
                 </div>
-                <div className={styles.dirClnicoZenn}>MP: 101127</div>
+                <div className={styles.dirClnicoZenn}>M.P. 101127</div>
               </div>
             </div>
           </div>

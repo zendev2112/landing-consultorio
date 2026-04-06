@@ -30,7 +30,16 @@ const Hero: FunctionComponent = () => {
             <button className="cta">AGENDÁ TU TURNO</button>
           </div>
         </div>
-        <div className={styles.imagePlaceholder} />
+        <div className={styles.imagePlaceholder}>
+          <video
+            className={styles.heroVideo}
+            src="https://res.cloudinary.com/dptdloagw/video/upload/v1775480305/recorrida_zpo_qyc9cd.mov"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
       </div>
     </section>
   )
