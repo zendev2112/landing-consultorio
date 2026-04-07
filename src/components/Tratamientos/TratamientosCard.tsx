@@ -19,7 +19,14 @@ const TratamientosCard = ({
         <b className={styles.title}>{title}</b>
         <p className={styles.description}>{description}</p>
       </div>
-      <button className={styles.cardBtn}>AGENDÁ TU TURNO</button>
+      <a
+        href="https://wa.me/5492926476050"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.cardBtn}
+      >
+        AGENDÁ TU TURNO
+      </a>
     </div>
   )
 }

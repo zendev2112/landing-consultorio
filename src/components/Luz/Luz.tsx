@@ -1,10 +1,21 @@
 import { FunctionComponent } from 'react'
 import styles from './Luz.module.css'
 
-const Luz: FunctionComponent = () => {
+interface LuzProps {
+  variant?: 'desktop' | 'tablet-hero' | 'mobile'
+}
+
+const Luz: FunctionComponent<LuzProps> = ({ variant = 'desktop' }) => {
+  const variantClass =
+    variant === 'tablet-hero'
+      ? styles.variantTabletHero
+      : variant === 'mobile'
+        ? styles.variantMobile
+        : styles.variantDesktop
+
   return (
     <a
-      className={styles.luz}
+      className={`${styles.luz} ${variantClass}`}
       href="https://wa.me/5492926476050"
       target="_blank"
       rel="noopener noreferrer"

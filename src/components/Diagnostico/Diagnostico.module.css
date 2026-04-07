@@ -106,6 +106,7 @@
     box-sizing: border-box;
     color: #3e5648;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .btnDesktop {

@@ -152,6 +152,7 @@
     border: none;
     cursor: pointer;
     font-family: inherit;
+    text-decoration: none;
 }
 
 .btnLabel {
@@ -191,6 +192,21 @@
     letter-spacing: 0.01em;
     line-height: 17px;
     font-size: 14.3px;
+}
+
+/* ===== DESKTOP (≥1024px) — spacing nudges ===== */
+@media (min-width: 1024px) {
+    .aceptamosTodos {
+        margin-top: 24px;
+    }
+
+    .mapImg {
+        margin-top: 24px;
+    }
+
+    .btnContactanos {
+        margin-top: 24px;
+    }
 }
 
 /* ===== TABLET (768px–1023px) ===== */

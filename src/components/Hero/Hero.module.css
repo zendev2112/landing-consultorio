@@ -20,7 +20,13 @@
     gap: 128px;
 }
 
-/* ===== Right column — image placeholder ===== */
+/* ===== Right column — image sector (wrapper) + placeholder ===== */
+.imageSector {
+    position: relative;
+    overflow: visible;
+    margin-top: -18px;
+}
+
 .imagePlaceholder {
     width: 100%;
     aspect-ratio: 568 / 550;
@@ -66,9 +72,13 @@
         gap: 55px;
     }
 
-    .imagePlaceholder {
+    .imageSector {
         width: calc(100% - 160px);
         justify-self: start;
+        margin-top: 0;
+    }
+
+    .imagePlaceholder {
         border-radius: 27.2px;
     }
 }
@@ -143,9 +153,7 @@
     margin-bottom: 24px;
 }
 
-.imagePlaceholder {
-    margin-top: -18px;
-}
+/* margin-top is now on .imageSector */
 
 .body {
     font-family: 'Fibra One';

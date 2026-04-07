@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.seccionFooter}>
+    <footer className={styles.seccionFooter} id="contacto">
       <div className={styles.inner}>
         <div className={styles.footerColumns}>
           {/* Logo + accepted payments */}
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             </div>
             <iframe
               className={styles.mapImg}
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=Villegas+175,+Coronel+Suárez,+Buenos+Aires,+Argentina"
+              src="https://maps.google.com/maps?q=Villegas+175,+Coronel+Su%C3%A1rez,+Buenos+Aires,+Argentina&t=&z=15&ie=UTF8&iwloc=&output=embed"
               title="Mapa consultorio Zenón Ponce Odontología"
               allowFullScreen
               loading="lazy"
@@ -59,9 +59,14 @@ const Footer: React.FC = () => {
                 <span className={styles.phone}>2926 47 6050</span>
               </div>
             </div>
-            <button className={styles.btnContactanos}>
+            <a
+              href="https://wa.me/5492926476050"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.btnContactanos}
+            >
               <b className={styles.btnLabel}>CONTACTANOS</b>
-            </button>
+            </a>
           </div>
         </div>
 

@@ -41,9 +41,14 @@ const Diagnostico: FunctionComponent = () => {
               derivaciones ni demoras. Y todo en un espacio pensado para atender
               tu salud bucal con tecnología y calidez.
             </p>
-            <button className={`${styles.btnAgenda} ${styles.btnDesktop}`}>
+            <a
+              href="https://wa.me/5492926476050"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.btnAgenda} ${styles.btnDesktop}`}
+            >
               <b className={styles.btnLabel}>AGENDÁ TU TURNO</b>
-            </button>
+            </a>
           </div>
 
           <div className={styles.estudios}>
@@ -68,9 +73,14 @@ const Diagnostico: FunctionComponent = () => {
               <span className={styles.estudioLabel}>Escaneo intraoral</span>
             </div>
           </div>
-          <button className={`${styles.btnAgenda} ${styles.btnMobileTablet}`}>
+          <a
+            href="https://wa.me/5492926476050"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.btnAgenda} ${styles.btnMobileTablet}`}
+          >
             <b className={styles.btnLabel}>AGENDÁ TU TURNO</b>
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react'
 import styles from './Hero.module.css'
+import Luz from '../Luz/Luz'
 
 const Hero: FunctionComponent = () => {
   return (
@@ -27,18 +28,29 @@ const Hero: FunctionComponent = () => {
               desde el diagnóstico hasta el tratamiento.
             </p>
             <p className={styles.subtitle}>Y todo en el mismo lugar.</p>
-            <button className="cta">AGENDÁ TU TURNO</button>
+            <a
+              href="https://wa.me/5492926476050"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta"
+            >
+              AGENDÁ TU TURNO
+            </a>
           </div>
         </div>
-        <div className={styles.imagePlaceholder}>
-          <video
-            className={styles.heroVideo}
-            src="https://res.cloudinary.com/dptdloagw/video/upload/v1775480305/recorrida_zpo_qyc9cd.mov"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
+        <div className={styles.imageSector}>
+          <div className={styles.imagePlaceholder}>
+            <video
+              className={styles.heroVideo}
+              src="https://res.cloudinary.com/dptdloagw/video/upload/v1775480305/recorrida_zpo_qyc9cd.mov"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </div>
+          <Luz variant="tablet-hero" />
+          <Luz variant="mobile" />
         </div>
       </div>
     </section>

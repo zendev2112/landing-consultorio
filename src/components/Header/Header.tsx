@@ -95,7 +95,9 @@ const Header: React.FC = () => {
           {/* Desktop CTA button (hidden on mobile) + Hamburger (tablet + mobile) — grouped */}
           <div className={styles.btnHamb}>
             <a
-              href="#contacto"
+              href="https://wa.me/5492926476050"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${styles.btnAgenda} ${styles.btnAgendaDesktop}`}
             >
               <b>AGENDÁ TU TURNO</b>

@@ -31,9 +31,14 @@ const NuestroCentro: React.FC = () => {
             <br />• Espacio de hospitalidad para los pacientes y sus
             acompañantes.
           </div>
-          <button className={styles.btnAgenda}>
+          <a
+            href="https://wa.me/5492926476050"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btnAgenda}
+          >
             <b className={styles.agendTuTurno}>AGENDÁ TU TURNO</b>
-          </button>
+          </a>
         </div>
       </div>
     </section>

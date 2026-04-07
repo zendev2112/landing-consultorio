@@ -55,7 +55,13 @@ const MenuHamburguesaMobile: FunctionComponent<MenuHamburguesaMobileType> = ({
             <b>{label}</b>
           </a>
         ))}
-        <a href="#contacto" className={styles.btnAgenda} onClick={onClose}>
+        <a
+          href="https://wa.me/5492926476050"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.btnAgenda}
+          onClick={onClose}
+        >
           <b className={styles.agendTuTurno}>AGENDÁ TU TURNO</b>
         </a>
       </div>

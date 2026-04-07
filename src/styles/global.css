@@ -433,6 +433,7 @@ ol {
     cursor: pointer;
     transition: all 0.3s ease;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .cta:hover {

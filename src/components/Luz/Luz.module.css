@@ -114,10 +114,47 @@
     opacity: 1;
 }
 
-/* ===== Hide on tablet / mobile ===== */
+/* ===== Variants ===== */
 
+/* Desktop: visible by default via .luz base styles — no extra positioning needed */
+.variantDesktop {
+    display: flex;
+    /* inherits but declared explicitly */
+}
+
+/* Tablet-hero: shown only on 768–1023px, same absolute positioning as desktop */
+.variantTabletHero {
+    display: none;
+}
+
+/* Mobile: shown only below 768px, fixed to viewport bottom-right */
+.variantMobile {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    left: auto;
+}
+
+/* Tablet + mobile → hide desktop variant */
 @media (max-width: 1023px) {
-    .luz {
+    .variantDesktop {
         display: none;
+    }
+}
+
+/* Tablet → show tablet-hero variant */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .variantTabletHero {
+        display: flex;
+        bottom: 24px;
+        left: calc(100% - 88px);
+    }
+}
+
+/* Mobile → show mobile variant */
+@media (max-width: 767px) {
+    .variantMobile {
+        display: flex;
     }
 }

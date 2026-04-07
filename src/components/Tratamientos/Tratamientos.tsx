@@ -95,7 +95,7 @@ const Tratamientos: FunctionComponent = () => {
             </p>
           </div>
           <div className={styles.luzCol}>
-            <Luz />
+            <Luz variant="desktop" />
           </div>
         </div>
         <div className={styles.grid}>
