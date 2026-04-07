@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 import styles from './Tratamientos.module.css'
 import TratamientosCard from './TratamientosCard'
+import Luz from '../Luz/Luz'
 
 const cards = [
   {
@@ -83,13 +84,20 @@ const Tratamientos: FunctionComponent = () => {
   return (
     <section className={styles.tratamientos} id="tratamientos">
       <div className={styles.tratamientosInner}>
-        <div className={styles.heading}>
-          <h2 className={styles.title}>Tratamientos</h2>
+        <div className={styles.topRow}>
+          <div className={styles.textCol}>
+            <div className={styles.heading}>
+              <h2 className={styles.title}>Tratamientos</h2>
+            </div>
+            <p className={styles.subtitle}>
+              Ofrecemos soluciones integrales y duraderas que protegen la salud
+              y la estética bucal.
+            </p>
+          </div>
+          <div className={styles.luzCol}>
+            <Luz />
+          </div>
         </div>
-        <p className={styles.subtitle}>
-          Ofrecemos soluciones integrales y duraderas que protegen la salud y la
-          estética bucal.
-        </p>
         <div className={styles.grid}>
           {cards.map((card, i) => (
             <TratamientosCard

@@ -1,0 +1,123 @@
+/* ===== LUZ — chat button ===== */
+
+@keyframes eyesBlink {
+
+    0%,
+    89%,
+    100% {
+        opacity: 1;
+    }
+
+    91%,
+    97% {
+        opacity: 0;
+    }
+}
+
+@keyframes eyesBlinkClosed {
+
+    0%,
+    89%,
+    100% {
+        opacity: 0;
+    }
+
+    91%,
+    97% {
+        opacity: 1;
+    }
+}
+
+.luz {
+    /* Left edge fixed at right side of column — pill expands RIGHTWARD into gutter */
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 64px);
+    height: 64px;
+    width: 64px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+    background-color: #b3cebc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: width 0.3s ease, box-shadow 0.2s ease;
+    z-index: 10;
+}
+
+.luz:hover {
+    width: 210px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.28);
+}
+
+/* ===== Icon ===== */
+
+.iconWrapper {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.eyesOpen,
+.eyesClosed {
+    width: 40px;
+    height: 37px;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* Default: eyes open — auto blink closed every 4 s */
+.eyesOpen {
+    animation: eyesBlink 4s ease-in-out infinite;
+}
+
+.eyesClosed {
+    animation: eyesBlinkClosed 4s ease-in-out infinite;
+}
+
+/* Hover: always closed */
+.luz:hover .eyesOpen {
+    animation: none;
+    opacity: 0;
+}
+
+.luz:hover .eyesClosed {
+    animation: none;
+    opacity: 1;
+}
+
+/* ===== Label ===== */
+
+.label {
+    width: 146px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-family: 'Fibra One', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #435549;
+    text-align: center;
+    transform: translateX(-12px);
+    opacity: 0;
+    transition: opacity 0.2s ease 0.12s;
+}
+
+.luz:hover .label {
+    opacity: 1;
+}
+
+/* ===== Hide on tablet / mobile ===== */
+
+@media (max-width: 1023px) {
+    .luz {
+        display: none;
+    }
+}

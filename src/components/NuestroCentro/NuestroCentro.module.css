@@ -6,6 +6,7 @@
 
 .seccionNuestroCentro {
     width: 100%;
+    overflow: hidden;
     text-align: left;
     font-size: clamp(18px, calc(1.06vw + 7.17px), 22.4px);
     color: #435549;
@@ -21,6 +22,7 @@
     grid-template-columns: minmax(0, 570fr) minmax(0, 540fr);
     align-items: center;
     gap: 99px;
+    overflow: hidden;
 }
 
 .clipPathFrame {
@@ -102,22 +104,19 @@
    Figma node 494-683
    ============================================= */
 /* =============================================
-   Small desktop (1024px – 1279px)
+   Small desktop / laptop (1024px – 1439px)
    ============================================= */
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
     .inner {
-        padding: var(--spacing-sections) var(--gutter-tablet);
-        gap: 48px;
-        align-items: stretch;
+        gap: 40px;
     }
 
-    .seccionNuestroCentro {
-        font-size: 15px;
+    .nuestroCentro2 {
+        font-size: 22px;
     }
 
     .nuestroCentro {
         gap: 14px;
-        justify-content: space-between;
     }
 }
 
