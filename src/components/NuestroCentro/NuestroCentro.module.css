@@ -104,6 +104,23 @@
    Figma node 494-683
    ============================================= */
 /* =============================================
+   Large desktop (≥ 1440px) — match columns height
+   ============================================= */
+@media (min-width: 1440px) {
+    .inner {
+        align-items: stretch;
+    }
+
+    .clipPathFrame {
+        aspect-ratio: unset;
+    }
+
+    .nuestroCentro {
+        justify-content: space-between;
+    }
+}
+
+/* =============================================
    Small desktop / laptop (1024px – 1439px)
    ============================================= */
 @media (min-width: 1024px) and (max-width: 1439px) {

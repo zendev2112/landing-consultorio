@@ -39,6 +39,25 @@
     display: block;
 }
 
+/* ===== Small desktop / laptop (1024px – 1439px) ===== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .heroInner {
+        gap: 48px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .body {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
 /* ===== Tablet (768px – 1023px) ===== */
 @media (min-width: 768px) and (max-width: 1023px) {
     .heroInner {
