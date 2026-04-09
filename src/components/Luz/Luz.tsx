@@ -1,4 +1,4 @@
-import { FunctionComponent, useState, useEffect } from 'react'
+import { FunctionComponent, useState, useEffect, useRef } from 'react'
 import styles from './Luz.module.css'
 
 interface LuzProps {
@@ -7,6 +7,7 @@ interface LuzProps {
 
 const Luz: FunctionComponent<LuzProps> = ({ variant = 'desktop' }) => {
   const [expanded, setExpanded] = useState(false)
+  const isTouchRef = useRef(false)
 
   const variantClass =
     variant === 'tablet-hero'
@@ -15,12 +16,33 @@ const Luz: FunctionComponent<LuzProps> = ({ variant = 'desktop' }) => {
         ? styles.variantMobile
         : styles.variantDesktop
 
-  // Also collapse when user returns from WhatsApp
+  // Collapse when user returns from WhatsApp
   useEffect(() => {
     const handleFocus = () => setExpanded(false)
     window.addEventListener('focus', handleFocus)
     return () => window.removeEventListener('focus', handleFocus)
   }, [])
+
+  const handleTouchStart = () => {
+    isTouchRef.current = true
+  }
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (isTouchRef.current) {
+      isTouchRef.current = false
+      if (!expanded) {
+        // First tap: expand, don't navigate yet
+        e.preventDefault()
+        setExpanded(true)
+        return
+      }
+      // Second tap: collapse and navigate
+      setExpanded(false)
+      return
+    }
+    // Mouse click: collapse and navigate
+    setExpanded(false)
+  }
 
   return (
     <a
@@ -31,7 +53,8 @@ const Luz: FunctionComponent<LuzProps> = ({ variant = 'desktop' }) => {
       aria-label="Chateá con Luz"
       onMouseEnter={() => setExpanded(true)}
       onMouseLeave={() => setExpanded(false)}
-      onClick={() => setExpanded(false)}
+      onTouchStart={handleTouchStart}
+      onClick={handleClick}
     >
       <span className={styles.iconWrapper}>
         <img
