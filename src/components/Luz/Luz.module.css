@@ -48,10 +48,26 @@
     z-index: 10;
 }
 
-.luz:hover {
+.luzExpanded {
     width: 210px;
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.28);
 }
+
+.luzExpanded .eyesOpen {
+    animation: none;
+    opacity: 0;
+}
+
+.luzExpanded .eyesClosed {
+    animation: none;
+    opacity: 1;
+}
+
+.luzExpanded .label {
+    opacity: 1;
+}
+
+/* Hover still works as fallback (touch devices) */
 
 /* ===== Icon ===== */
 
@@ -82,16 +98,7 @@
     animation: eyesBlinkClosed 4s ease-in-out infinite;
 }
 
-/* Hover: always closed */
-.luz:hover .eyesOpen {
-    animation: none;
-    opacity: 0;
-}
-
-.luz:hover .eyesClosed {
-    animation: none;
-    opacity: 1;
-}
+/* Hover: always closed — state is JS-driven via .luzExpanded */
 
 /* ===== Label ===== */
 
@@ -110,9 +117,7 @@
     transition: opacity 0.2s ease 0.12s;
 }
 
-.luz:hover .label {
-    opacity: 1;
-}
+/* Hover drives label via .luzExpanded — see above */
 
 /* ===== Variants ===== */
 

@@ -1,4 +1,4 @@
-import { FunctionComponent, useRef, useEffect } from 'react'
+import { FunctionComponent, useState, useEffect } from 'react'
 import styles from './Luz.module.css'
 
 interface LuzProps {
@@ -6,7 +6,7 @@ interface LuzProps {
 }
 
 const Luz: FunctionComponent<LuzProps> = ({ variant = 'desktop' }) => {
-  const luzRef = useRef<HTMLAnchorElement>(null)
+  const [expanded, setExpanded] = useState(false)
 
   const variantClass =
     variant === 'tablet-hero'
@@ -15,27 +15,23 @@ const Luz: FunctionComponent<LuzProps> = ({ variant = 'desktop' }) => {
         ? styles.variantMobile
         : styles.variantDesktop
 
-  // Reset hover state when window regains focus (returning from WhatsApp)
+  // Also collapse when user returns from WhatsApp
   useEffect(() => {
-    const handleFocus = () => {
-      if (luzRef.current) {
-        luzRef.current.blur()
-      }
-    }
-
+    const handleFocus = () => setExpanded(false)
     window.addEventListener('focus', handleFocus)
     return () => window.removeEventListener('focus', handleFocus)
   }, [])
 
   return (
     <a
-      ref={luzRef}
-      className={`${styles.luz} ${variantClass}`}
+      className={`${styles.luz} ${variantClass} ${expanded ? styles.luzExpanded : ''}`}
       href="https://wa.me/5492926476050?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20sacar%20un%20turno"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chateá con Luz"
-      onMouseLeave={() => luzRef.current?.blur()}
+      onMouseEnter={() => setExpanded(true)}
+      onMouseLeave={() => setExpanded(false)}
+      onClick={() => setExpanded(false)}
     >
       <span className={styles.iconWrapper}>
         <img
