@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <a
-              href="https://wa.me/5492926476050"
+              href="https://wa.me/5492926476050?text=Hola,%20vengo%20de%20la%20web.%20Quiero%20sacar%20un%20turno"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.btnContactanos}
