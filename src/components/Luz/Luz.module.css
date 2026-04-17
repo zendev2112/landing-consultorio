@@ -121,10 +121,13 @@
 
 /* ===== Variants ===== */
 
-/* Desktop: visible by default via .luz base styles — no extra positioning needed */
+/* Desktop: fixed to viewport, aligned with content right edge */
 .variantDesktop {
     display: flex;
-    /* inherits but declared explicitly */
+    position: fixed;
+    bottom: 120px;
+    left: auto;
+    right: max(var(--gutter-desktop), calc((100vw - var(--layout-max-width)) / 2 + var(--gutter-desktop)));
 }
 
 /* Tablet-hero: shown only on 768–1023px, same absolute positioning as desktop */

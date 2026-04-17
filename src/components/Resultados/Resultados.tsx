@@ -12,7 +12,7 @@ type Breakpoint = 'desktop' | 'tablet' | 'mobile'
 const IMAGES = {
   desktop: {
     before:
-      'https://res.cloudinary.com/dptdloagw/image/upload/v1774899467/antes-desktop_cudqgw.png',
+      'https://res.cloudinary.com/dptdloagw/image/upload/v1776424888/Screenshot_from_2026-04-17_08-02-13_xu4vik.png',
     after:
       'https://res.cloudinary.com/dptdloagw/image/upload/v1774899468/despues-desktop_tgjty6.png',
   },
@@ -104,14 +104,14 @@ const Resultados: FunctionComponent = () => {
         >
           <img
             className={styles.imgBefore}
-            src={before}
-            alt="Antes"
+            src={after}
+            alt="Después"
             draggable={false}
           />
           <img
             className={styles.imgAfter}
-            src={after}
-            alt="Después"
+            src={before}
+            alt="Antes"
             draggable={false}
             style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
           />

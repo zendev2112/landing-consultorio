@@ -10,6 +10,7 @@ import Profesionales from './components/Profesionales/Profesionales'
 import Opiniones from './components/Opiniones/Opiniones'
 import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer'
+import Luz from './components/Luz/Luz'
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         <FAQ />
       </main>
       <Footer />
+      <Luz variant="desktop" />
     </div>
   )
 }
