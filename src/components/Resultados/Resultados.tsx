@@ -12,9 +12,9 @@ type Breakpoint = 'desktop' | 'tablet' | 'mobile'
 const IMAGES = {
   desktop: {
     before:
-      'https://res.cloudinary.com/dptdloagw/image/upload/v1776431770/Screenshot_from_2026-04-17_10-15-33_cyo4ev.png',
+      'https://res.cloudinary.com/dptdloagw/image/upload/v1774899467/antes-tablet_n12ujo.png',
     after:
-      'https://res.cloudinary.com/dptdloagw/image/upload/v1776431771/Screenshot_from_2026-04-17_10-15-49_pki2mg.png',
+      'https://res.cloudinary.com/dptdloagw/image/upload/v1774899467/despues-tablet_yf044q.png',
   },
   tablet: {
     before:
