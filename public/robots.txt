@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zenonponceodontologia.com.ar/sitemap.xml
