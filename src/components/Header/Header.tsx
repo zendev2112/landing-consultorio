@@ -74,7 +74,7 @@ const Header: React.FC = () => {
           >
             <img
               className={styles.logo}
-              src="/icono-marca.svg"
+              src="https://res.cloudinary.com/dptdloagw/image/upload/v1777322694/icono-marca_kd9zcs.svg"
               alt="Zenón Ponce Odontología"
               width={198}
               height={44}
