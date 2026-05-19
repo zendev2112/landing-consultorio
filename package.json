@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite-react-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.30.3",
+    "vite-react-ssg": "^0.9.1-beta.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",

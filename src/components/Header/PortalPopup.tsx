@@ -184,13 +184,20 @@ export const Portal: FunctionComponent<PortalProps> = ({
   children,
   containerId = 'portals',
 }) => {
-  let portalsDiv = document.getElementById(containerId)
-  if (!portalsDiv) {
-    portalsDiv = document.createElement('div')
-    portalsDiv.setAttribute('id', containerId)
-    document.body.appendChild(portalsDiv)
-  }
-  return createPortal(children, portalsDiv)
+  const [container, setContainer] = useState<Element | null>(null)
+
+  useEffect(() => {
+    let portalsDiv = document.getElementById(containerId)
+    if (!portalsDiv) {
+      portalsDiv = document.createElement('div')
+      portalsDiv.setAttribute('id', containerId)
+      document.body.appendChild(portalsDiv)
+    }
+    setContainer(portalsDiv)
+  }, [containerId])
+
+  if (!container) return null
+  return createPortal(children, container)
 }
 
 export default PortalPopup
