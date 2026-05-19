@@ -107,8 +107,19 @@
     font-size: 14.3px;
 }
 
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.socialIcons a {
+    display: flex;
+}
+
 .redesSocialesIcon {
-    width: 103.6px;
+    width: 27.9px;
     height: 27.9px;
 }
 

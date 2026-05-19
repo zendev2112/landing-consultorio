@@ -42,11 +42,44 @@ const Footer: React.FC = () => {
           <div className={styles.footerRight}>
             <div className={styles.redesSociales}>
               <b className={styles.sectionLabel}>REDES SOCIALES</b>
-              <img
-                className={styles.redesSocialesIcon}
-                src="/redes-sociales.svg"
-                alt="Instagram y Facebook"
-              />
+              <div className={styles.socialIcons}>
+                <a
+                  href="https://www.instagram.com/zenonponce.odontologia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <img
+                    className={styles.redesSocialesIcon}
+                    src="/icon-instagram.svg"
+                    alt="Instagram"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/p/Zenon-Ponce-Odontologia-100069583947007/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <img
+                    className={styles.redesSocialesIcon}
+                    src="/icon-facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@dr.zenon.ponce"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                >
+                  <img
+                    className={styles.redesSocialesIcon}
+                    src="/icon-tiktok.svg"
+                    alt="TikTok"
+                  />
+                </a>
+              </div>
             </div>
             <div className={styles.contacto}>
               <b className={styles.sectionLabel}>CONTACTO</b>
