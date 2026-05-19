@@ -42,7 +42,7 @@ const Hero: FunctionComponent = () => {
           <div className={styles.imagePlaceholder}>
             <video
               className={styles.heroVideo}
-              src="https://res.cloudinary.com/dptdloagw/video/upload/v1775480305/recorrida_zpo_qyc9cd.mov"
+              src="https://res.cloudinary.com/dptdloagw/video/upload/v1779211664/recorrida_zpo_qyc9cd_n5fgng.mp4"
               autoPlay
               muted
               loop
