@@ -5,7 +5,7 @@ import MenuHamburguesaTablet from './MenuHamburguesaTablet'
 import MenuHamburguesaMobile from './MenuHamburguesaMobile'
 
 const NAV_LINKS = [
-  { label: 'Equipo', href: '#profesionales' },
+  // { label: 'Equipo', href: '#profesionales' },
   { label: 'Nuestro centro', href: '#nuestro-centro' },
   { label: 'Tratamientos', href: '#tratamientos' },
   { label: 'Contacto', href: '#contacto' },

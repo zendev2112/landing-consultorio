@@ -6,7 +6,7 @@ import Diagnostico from './components/Diagnostico/Diagnostico'
 import Resultados from './components/Resultados/Resultados'
 import Minutos from './components/Minutos/Minutos'
 import NuestroCentro from './components/NuestroCentro/NuestroCentro'
-import Profesionales from './components/Profesionales/Profesionales'
+// import Profesionales from './components/Profesionales/Profesionales'
 import Opiniones from './components/Opiniones/Opiniones'
 import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer'
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Resultados />
         <Minutos />
         <NuestroCentro />
-        <Profesionales />
+        {/* <Profesionales /> */}
         <Opiniones />
         <FAQ />
       </main>

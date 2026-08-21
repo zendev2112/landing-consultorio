@@ -8,7 +8,7 @@ export type MenuHamburguesaMobileType = {
 
 const NAV_LINKS = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Equipo', href: '#profesionales' },
+  // { label: 'Equipo', href: '#profesionales' },
   { label: 'Nuestro Centro', href: '#nuestro-centro' },
   { label: 'Tratamientos', href: '#tratamientos' },
   { label: 'Contacto', href: '#contacto' },
